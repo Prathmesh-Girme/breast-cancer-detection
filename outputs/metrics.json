@@ -1,0 +1,113 @@
+{
+  "final_model": "SVM (RBF)",
+  "selection_rule": "best cross-validated ROC-AUC on training data (test set not used)",
+  "majority_class_accuracy": 0.6257309941520468,
+  "final_model_test": {
+    "accuracy": 0.9766081871345029,
+    "precision": 1.0,
+    "recall": 0.9375,
+    "f1": 0.967741935483871,
+    "roc_auc": 0.9981016355140186,
+    "missed_malignant": 4,
+    "false_alarms": 0,
+    "confusion_matrix": [
+      [
+        107,
+        0
+      ],
+      [
+        4,
+        60
+      ]
+    ],
+    "train_accuracy": 0.9874371859296482
+  },
+  "final_model_test_screening_threshold": {
+    "accuracy": 0.9766081871345029,
+    "precision": 0.9545454545454546,
+    "recall": 0.984375,
+    "f1": 0.9692307692307692,
+    "roc_auc": 0.9981016355140186,
+    "missed_malignant": 1,
+    "false_alarms": 3,
+    "confusion_matrix": [
+      [
+        104,
+        3
+      ],
+      [
+        1,
+        63
+      ]
+    ],
+    "threshold": 0.14
+  },
+  "feature_importance_roc_auc_drop": {
+    "worst texture": 0.00698014018691584,
+    "mean concavity": 0.00249707943925232,
+    "worst concavity": 0.00248977803738315,
+    "worst area": 0.0024094626168224055,
+    "texture error": 0.002387558411214935,
+    "mean concave points": 0.0023510514018691307,
+    "worst perimeter": 0.0019202686915887669,
+    "worst radius": 0.0018618574766354813,
+    "radius error": 0.001701226635513997,
+    "area error": 0.0016939252336448274
+  },
+  "comparison": [
+    {
+      "Model": "Logistic Regression",
+      "Settings": "C=0.1",
+      "CV_Accuracy": 0.9697784810126582,
+      "CV_Precision": 0.9933333333333334,
+      "CV_Recall": 0.925057471264368,
+      "CV_F1": 0.9573230453768152,
+      "CV_ROC_AUC": 0.993526436781609,
+      "CV_ROC_AUC_Std": 0.005202611212629628,
+      "Train_Accuracy": 0.9824120603015075,
+      "Test_Accuracy": 0.9824561403508771,
+      "Test_Precision": 1.0,
+      "Test_Recall": 0.953125,
+      "Test_F1": 0.976,
+      "Test_ROC_AUC": 0.9988317757009346,
+      "Missed_Malignant": 3,
+      "False_Alarms": 0
+    },
+    {
+      "Model": "SVM (RBF)",
+      "Settings": "C=10, gamma=0.01",
+      "CV_Accuracy": 0.9723101265822784,
+      "CV_Precision": 0.979029374201788,
+      "CV_Recall": 0.9457471264367816,
+      "CV_F1": 0.9618646850908688,
+      "CV_ROC_AUC": 0.9942114942528736,
+      "CV_ROC_AUC_Std": 0.005246466577335635,
+      "Train_Accuracy": 0.9874371859296482,
+      "Test_Accuracy": 0.9766081871345029,
+      "Test_Precision": 1.0,
+      "Test_Recall": 0.9375,
+      "Test_F1": 0.967741935483871,
+      "Test_ROC_AUC": 0.9981016355140186,
+      "Missed_Malignant": 4,
+      "False_Alarms": 0
+    },
+    {
+      "Model": "Random Forest",
+      "Settings": "max_depth=5, min_samples_leaf=3",
+      "CV_Accuracy": 0.9395886075949367,
+      "CV_Precision": 0.925011165011165,
+      "CV_Recall": 0.9179310344827586,
+      "CV_F1": 0.9185282722081487,
+      "CV_ROC_AUC": 0.9863770114942529,
+      "CV_ROC_AUC_Std": 0.007200675237343704,
+      "Train_Accuracy": 0.9874371859296482,
+      "Test_Accuracy": 0.9649122807017544,
+      "Test_Precision": 1.0,
+      "Test_Recall": 0.90625,
+      "Test_F1": 0.9508196721311475,
+      "Test_ROC_AUC": 0.9962032710280374,
+      "Missed_Malignant": 6,
+      "False_Alarms": 0
+    }
+  ]
+}

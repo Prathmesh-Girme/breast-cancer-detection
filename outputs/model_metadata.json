@@ -1,0 +1,213 @@
+{
+  "model_name": "SVM (RBF)",
+  "model_class": "SVC",
+  "model_parameters": {
+    "C": 10,
+    "break_ties": false,
+    "cache_size": 200,
+    "class_weight": null,
+    "coef0": 0.0,
+    "decision_function_shape": "ovr",
+    "degree": 3,
+    "gamma": 0.01,
+    "kernel": "rbf",
+    "max_iter": -1,
+    "probability": true,
+    "random_state": 42,
+    "shrinking": true,
+    "tol": 0.001,
+    "verbose": false
+  },
+  "selection": {
+    "rule": "best cross-validated ROC-AUC on training data",
+    "cv_roc_auc": 0.9942114942528736
+  },
+  "trained_at": "2026-11-03T04:01:47",
+  "python_version": "3.12.3",
+  "scikit_learn_version": "1.8.0",
+  "pandas_version": "3.0.2",
+  "training_rows": 398,
+  "features": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "training_ranges": {
+    "mean radius": [
+      6.981,
+      28.11
+    ],
+    "mean texture": [
+      9.71,
+      39.28
+    ],
+    "mean perimeter": [
+      43.79,
+      188.5
+    ],
+    "mean area": [
+      143.5,
+      2499.0
+    ],
+    "mean smoothness": [
+      0.06251,
+      0.1634
+    ],
+    "mean compactness": [
+      0.01938,
+      0.3454
+    ],
+    "mean concavity": [
+      0.0,
+      0.4268
+    ],
+    "mean concave points": [
+      0.0,
+      0.2012
+    ],
+    "mean symmetry": [
+      0.106,
+      0.2906
+    ],
+    "mean fractal dimension": [
+      0.05024,
+      0.09744
+    ],
+    "radius error": [
+      0.1115,
+      2.873
+    ],
+    "texture error": [
+      0.3602,
+      4.885
+    ],
+    "perimeter error": [
+      0.757,
+      21.98
+    ],
+    "area error": [
+      6.802,
+      525.6
+    ],
+    "smoothness error": [
+      0.001713,
+      0.03113
+    ],
+    "compactness error": [
+      0.002252,
+      0.1064
+    ],
+    "concavity error": [
+      0.0,
+      0.396
+    ],
+    "concave points error": [
+      0.0,
+      0.05279
+    ],
+    "symmetry error": [
+      0.007882,
+      0.07895
+    ],
+    "fractal dimension error": [
+      0.0008948,
+      0.02984
+    ],
+    "worst radius": [
+      7.93,
+      33.13
+    ],
+    "worst texture": [
+      12.02,
+      49.54
+    ],
+    "worst perimeter": [
+      50.41,
+      229.3
+    ],
+    "worst area": [
+      185.2,
+      3432.0
+    ],
+    "worst smoothness": [
+      0.07117,
+      0.2226
+    ],
+    "worst compactness": [
+      0.02729,
+      1.058
+    ],
+    "worst concavity": [
+      0.0,
+      1.252
+    ],
+    "worst concave points": [
+      0.0,
+      0.291
+    ],
+    "worst symmetry": [
+      0.1565,
+      0.6638
+    ],
+    "worst fractal dimension": [
+      0.05504,
+      0.2075
+    ]
+  },
+  "positive_class": "Malignant (1)",
+  "class_labels": {
+    "0": "Benign",
+    "1": "Malignant"
+  },
+  "decision_threshold": 0.5,
+  "screening_threshold": 0.14,
+  "screening_target_recall": 0.98,
+  "test_metrics": {
+    "accuracy": 0.9766081871345029,
+    "precision": 1.0,
+    "recall": 0.9375,
+    "f1": 0.967741935483871,
+    "roc_auc": 0.9981016355140186,
+    "missed_malignant": 4,
+    "false_alarms": 0,
+    "confusion_matrix": [
+      [
+        107,
+        0
+      ],
+      [
+        4,
+        60
+      ]
+    ],
+    "train_accuracy": 0.9874371859296482
+  },
+  "disclaimer": "Educational project. Not for clinical use."
+}

@@ -1,0 +1,4 @@
+Model,Settings,CV_Accuracy,CV_Precision,CV_Recall,CV_F1,CV_ROC_AUC,CV_ROC_AUC_Std,Train_Accuracy,Test_Accuracy,Test_Precision,Test_Recall,Test_F1,Test_ROC_AUC,Missed_Malignant,False_Alarms
+Logistic Regression,C=0.1,0.9698,0.9933,0.9251,0.9573,0.9935,0.0052,0.9824,0.9825,1.0,0.9531,0.976,0.9988,3,0
+SVM (RBF),"C=10, gamma=0.01",0.9723,0.979,0.9457,0.9619,0.9942,0.0052,0.9874,0.9766,1.0,0.9375,0.9677,0.9981,4,0
+Random Forest,"max_depth=5, min_samples_leaf=3",0.9396,0.925,0.9179,0.9185,0.9864,0.0072,0.9874,0.9649,1.0,0.9062,0.9508,0.9962,6,0
